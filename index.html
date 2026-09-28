@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DriveGuard Shield - Flotilla PRO</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+* { font-family: Inter, sans-serif; }
+.mono { font-family: 'JetBrains Mono', monospace; }
+body { background: #0B1220; }
+.card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); backdrop-filter: blur(20px); }
+</style>
+</head>
+<body class="text-white antialiased">
+<div class="flex min-h-screen">
+  <aside class="w-[280px] hidden lg:flex flex-col bg-[#0E172A] border-r border-white/10 p-6">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-[#00E676] flex items-center justify-center text-black font-black">🛡️</div>
+      <div><div class="font-bold">DriveGuard Shield</div><div class="mono text-[10px] tracking-widest text-white/40">FLOTILLA • PRO</div></div>
+    </div>
+    <div class="mt-6 flex items-center gap-2 px-3 py-2 rounded-full bg-white/5 border border-white/10 text-[11px] text-white/60"><span class="w-2 h-2 bg-[#00E676] rounded-full animate-pulse"></span> SISTEMA OPERATIVO v2.4.1</div>
+    <nav class="mt-8 space-y-1">
+      <div class="px-3 py-3 rounded-xl bg-white text-black font-semibold text-sm">📊 Dashboard</div>
+      <div class="px-3 py-3 rounded-xl text-white/50 hover:bg-white/5 text-sm">🚚 Unidades en Vivo • 24</div>
+      <div class="px-3 py-3 rounded-xl text-white/50 hover:bg-white/5 text-sm">📈 Reportes</div>
+      <div class="px-3 py-3 rounded-xl text-white/50 hover:bg-white/5 text-sm flex justify-between"><span>🔔 Alertas</span><span class="bg-[#FF3D57] text-white text-[11px] px-2 py-0.5 rounded-full">12</span></div>
+      <div class="px-3 py-3 rounded-xl text-white/50 hover:bg-white/5 text-sm">👥 Conductores</div>
+    </nav>
+    <div class="mt-auto card rounded-2xl p-4">
+      <div class="text-sm font-semibold">Transportes Mueganitos</div>
+      <div class="text-[11px] text-white/40 mono">Plan Enterprise • 28 unidades</div>
+      <div class="mt-3 h-1.5 bg-white/10 rounded-full overflow-hidden"><div class="h-full w-[85%] bg-[#00E676]"></div></div>
+    </div>
+  </aside>
+  <main class="flex-1 p-4 lg:p-8">
+    <div class="flex flex-wrap justify-between items-center gap-4 mb-8">
+      <div><h1 class="text-2xl lg:text-3xl font-bold tracking-tight">Dashboard Flotilla</h1><p class="text-white/50 text-sm mt-1">Monitoreo en tiempo real • Última actualización: ahora</p></div>
+      <div class="flex gap-3"><button class="h-10 px-5 rounded-full bg-[#00E676] text-black font-bold text-sm">+ Nueva Unidad</button><button class="h-10 px-5 rounded-full bg-white text-black font-semibold text-sm">Generar Reporte Flotilla</button></div>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      <div class="card rounded-2xl p-5"><div class="text-[11px] mono tracking-widest text-white/40">UNIDADES ACTIVAS</div><div class="mt-2 text-3xl font-bold">24<span class="text-white/30 text-xl">/28</span></div><div class="text-[11px] text-[#00E676] mt-1">+2 vs ayer</div></div>
+      <div class="card rounded-2xl p-5"><div class="text-[11px] mono tracking-widest text-white/40">BLOQUEOS HOY</div><div class="mt-2 text-3xl font-bold">47</div><div class="text-[11px] text-white/40 mt-1">12 automáticos</div></div>
+      <div class="card rounded-2xl p-5"><div class="text-[11px] mono tracking-widest text-white/40">VELOCIDAD PROMEDIO</div><div class="mt-2 text-3xl font-bold">62<span class="text-lg"> km/h</span></div><div class="text-[11px] text-[#00E676] mt-1">Dentro de rango</div></div>
+      <div class="card rounded-2xl p-5 border-[#FF3D57]/20"><div class="text-[11px] mono tracking-widest text-[#FF3D57]/80">INCIDENTES CRÍTICOS</div><div class="mt-2 text-3xl font-bold text-[#FF3D57]">2</div><div class="text-[11px] text-[#FF3D57]/70 mt-1">Requiere atención</div></div>
+    </div>
+    <div class="grid lg:grid-cols-3 gap-6 mb-8">
+      <div class="lg:col-span-2 card rounded-2xl p-0 overflow-hidden">
+        <div class="p-5 flex justify-between items-center border-b border-white/10"><div class="font-semibold">Mapa en Vivo • Autop. México-Querétaro</div><div class="text-[11px] mono px-2.5 py-1 rounded-full bg-[#00E676]/10 text-[#00E676] border border-[#00E676]/20">LIVE</div></div>
+        <div class="h-[320px] bg-[#0A0F1C] relative flex items-center justify-center">
+          <div class="absolute inset-0 opacity-20" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 30px 30px;"></div>
+          <div class="relative">
+            <div class="w-3 h-3 bg-[#FF3D57] rounded-full animate-ping absolute"></div>
+            <div class="w-3 h-3 bg-[#FF3D57] rounded-full relative border-2 border-white"></div>
+            <div class="mt-2 text-[10px] mono bg-black/80 px-2 py-1 rounded border border-white/20">Unidad 05 • 85 km/h</div>
+          </div>
+          <div class="absolute top-[30%] left-[60%]"><div class="w-2.5 h-2.5 bg-[#00E676] rounded-full border-2 border-white"></div><div class="text-[9px] mono bg-black/60 px-1.5 py-0.5 rounded mt-1">03 • 62 km/h</div></div>
+          <div class="absolute bottom-[25%] left-[30%]"><div class="w-2.5 h-2.5 bg-white/60 rounded-full border-2 border-white"></div><div class="text-[9px] mono bg-black/60 px-1.5 py-0.5 rounded mt-1">12 • Detenida</div></div>
+        </div>
+      </div>
+      <div class="card rounded-2xl p-0 overflow-hidden">
+        <div class="p-5 font-semibold border-b border-white/10">Unidades en Vivo</div>
+        <div class="divide-y divide-white/5">
+          <div class="p-4 flex justify-between items-center hover:bg-white/[0.03]"><div><div class="mono text-xs font-bold">05 • Juan R.</div><div class="text-[11px] text-white/50">Autop. Méx-Qro • ahora</div></div><div class="text-right"><div class="text-sm font-bold">85 km/h</div><div class="text-[10px] px-2 py-0.5 rounded-full bg-[#FF3D57]/15 text-[#FF3D57] border border-[#FF3D57]/20">BLOQUEO ACTIVO • 3 WA</div></div></div>
+          <div class="p-4 flex justify-between items-center hover:bg-white/[0.03]"><div><div class="mono text-xs font-bold">12 • Maria G.</div><div class="text-[11px] text-white/50">Patio Central • hace 4m</div></div><div class="text-right"><div class="text-sm font-bold">0 km/h</div><div class="text-[10px] px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-400 border border-amber-500/20">DETENIDA</div></div></div>
+          <div class="p-4 flex justify-between items-center hover:bg-white/[0.03]"><div><div class="mono text-xs font-bold">03 • Carlos M.</div><div class="text-[11px] text-white/50">Periférico Sur • ahora</div></div><div class="text-right"><div class="text-sm font-bold">62 km/h</div><div class="text-[10px] px-2 py-0.5 rounded-full bg-[#00E676]/15 text-[#00E676] border border-[#00E676]/20">EN RUTA</div></div></div>
+          <div class="p-4 flex justify-between items-center hover:bg-white/[0.03]"><div><div class="mono text-xs font-bold">19 • Luis P.</div><div class="text-[11px] text-white/50">Carr. Puebla • ahora</div></div><div class="text-right"><div class="text-sm font-bold">71 km/h</div><div class="text-[10px] px-2 py-0.5 rounded-full bg-[#00E676]/15 text-[#00E676] border border-[#00E676]/20">EN RUTA</div></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="card rounded-2xl overflow-hidden">
+      <div class="p-5 flex justify-between items-center border-b border-white/10"><div class="font-semibold">Reportes Recientes • 147 en total</div><button class="text-xs px-3 py-1.5 rounded-full bg-white/10 border border-white/10">Exportar a Excel</button></div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left">
+          <thead class="bg-white/[0.02] mono text-[11px] text-white/30"><tr><th class="px-6 py-3">UNIDAD</th><th class="px-6 py-3">CONDUCTOR</th><th class="px-6 py-3">DISTANCIA</th><th class="px-6 py-3">VEL MAX</th><th class="px-6 py-3">BLOQUEOS</th><th class="px-6 py-3 text-right">ACCIÓN</th></tr></thead>
+          <tbody class="divide-y divide-white/5 text-[13px]">
+            <tr class="hover:bg-white/[0.03]"><td class="px-6 py-4 mono font-bold"><span class="inline-block w-1 h-5 bg-[#FF3D57] rounded-full mr-2 align-middle"></span>Unidad 05</td><td class="px-6 py-4 text-white/60">Juan R.</td><td class="px-6 py-4 mono text-white/60">412 km</td><td class="px-6 py-4 mono">94 km/h</td><td class="px-6 py-4"><span class="px-2 py-1 rounded-full bg-[#FF3D57]/10 text-[#FF3D57] border border-[#FF3D57]/20 mono text-[11px]">3 bloqueos</span></td><td class="px-6 py-4 text-right"><button class="px-3.5 py-1.5 rounded-full bg-white text-black text-xs font-semibold">Ver Reporte PDF</button></td></tr>
+            <tr class="hover:bg-white/[0.03]"><td class="px-6 py-4 mono font-bold"><span class="inline-block w-1 h-5 bg-amber-400 rounded-full mr-2 align-middle"></span>Unidad 12</td><td class="px-6 py-4 text-white/60">Maria G.</td><td class="px-6 py-4 mono text-white/60">0 km</td><td class="px-6 py-4 mono">0 km/h</td><td class="px-6 py-4"><span class="px-2 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 mono text-[11px]">1 bloqueo</span></td><td class="px-6 py-4 text-right"><button class="px-3.5 py-1.5 rounded-full bg-white text-black text-xs font-semibold">Ver Reporte PDF</button></td></tr>
+            <tr class="hover:bg-white/[0.03]"><td class="px-6 py-4 mono font-bold"><span class="inline-block w-1 h-5 bg-[#00E676] rounded-full mr-2 align-middle"></span>Unidad 03</td><td class="px-6 py-4 text-white/60">Carlos M.</td><td class="px-6 py-4 mono text-white/60">287 km</td><td class="px-6 py-4 mono">88 km/h</td><td class="px-6 py-4"><span class="px-2 py-1 rounded-full bg-[#00E676]/10 text-[#00E676] border border-[#00E676]/20 mono text-[11px]">0 bloqueos</span></td><td class="px-6 py-4 text-right"><button class="px-3.5 py-1.5 rounded-full bg-white text-black text-xs font-semibold">Ver Reporte PDF</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="mt-6 mono text-[11px] text-white/20 flex justify-between"><span>DriveGuard Shield • Cifrado E2E • NOM-087 • 99.98% uptime</span><span>demo.driveguard.mx • Soporte 24/7</span></div>
+  </main>
+</div>
+</body>
+</html>
